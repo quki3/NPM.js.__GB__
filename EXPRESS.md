@@ -14,7 +14,21 @@ const app = express()
 ```
 # esta funcion nos devuelve propiedades y methodos
 ```bash
-  app.use //? monta una espesifica funcion o middleware en un espesifico path(ruta) esta
+  express.Router/? crea una nueva ruta objeto
+                  ------------------------------
+                  const { Router } = require('express');
+                  const router = Router();
+                  router.get('/',(req,res)=>{
+                                     res.json({"Title":"hello world"})
+                  })
+                  module.exports = router;
+  app.listen //?
+     
+     .get //?
+     
+     .post //? 
+     
+     .use //? monta una espesifica funcion o middleware en un espesifico path(ruta) esta
               middlewarefunction es ejecutada cuando la base de la peticion (requested)
               del path(ruta) coinsida con el path
               |argumentos que recibe|
