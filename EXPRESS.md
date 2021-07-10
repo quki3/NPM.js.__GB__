@@ -24,5 +24,16 @@ const app = express()
                                                    .una exprecion regular pattern que haga match con el path(ruta)
                                                    .un array de combinaciones de cualquiera de las anteriores
                              .callback => puede ser => una funcion middleware
-     .
+     .use(express.urlencoded({extended:false}))//? analiza el request retorna un middleware con un body que haga mach con type option
+                                               //? type option
+                                               extended : false //? permite analizar solo datos en cadena
+                                               inflate :
+                                               limit :
+                                               parameterLimit :
+                                               type :
+                                               veryfi :
+     .set//? asigna el nombre de configuracion a un valor podemos optener ese valor en cualquier parte de nuestra api
+             --------------------------------------------------------------------------------------------------------
+             app.set('port',3000)
+             app.listen(app.get('port'),()=>{console.log(`server on port ${app.get('port')}`)})
 ```
