@@ -28,6 +28,8 @@ const app = express()
      
      .post //? 
      
+     .delete//?
+     
      .use //? monta una espesifica funcion o middleware en un espesifico path(ruta) esta
               middlewarefunction es ejecutada cuando la base de la peticion (requested)
               del path(ruta) coinsida con el path
