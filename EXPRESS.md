@@ -44,7 +44,8 @@ const app = express()
      .use(express.urlencoded({extended:false}))//? analiza el request retorna un middleware con un body 
                                                    que haga   mach con type option
                                                //? type option
-                                               extended : false //? permite analizar solo datos en cadena
+                                               extended : false //? permite analizar solo datos en cadena y
+                                                                    entender los datos que llegan del formulario
                                                inflate :
                                                limit :
                                                parameterLimit :
