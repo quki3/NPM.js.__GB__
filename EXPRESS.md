@@ -2,6 +2,10 @@
 
 #instalacion
 ```bash
+$ npm i -s express
+npm //busca dentro de las dependencias de npm
+i // de install
+-s // para que se guarde dentro de las dependenciias
 $ npm install express --save // --save deprecado para node.js
 ```
 # requerimos expres
@@ -24,11 +28,13 @@ const app = express()
                   module.exports = router;
   app.listen //?
      
-     .get //?
+     .get //?listar
      
-     .post //? 
+     .post //? crear
      
-     .delete//?
+     .patch //? actualizar
+     
+     .delete//?eliminar
      
      .use //? monta una espesifica funcion o middleware en un espesifico path(ruta) esta
               middlewarefunction es ejecutada cuando la base de la peticion (requested)
