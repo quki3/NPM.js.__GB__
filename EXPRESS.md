@@ -26,7 +26,8 @@ const app = express()
                                      res.json({"Title":"hello world"})
                   })
                   module.exports = router;
-  app.listen //?
+  app.listen //? levanta el servidor escuchando en el puerto que le pases por argumento
+                |argumentos que recive|puerto ejm 3000
      
      .get //?listar
      
