@@ -20,12 +20,13 @@ const app = express()
 ```bash
   express.Router/? crea una nueva ruta objeto
                   ------------------------------
-                  const { Router } = require('express');
-                  const router = Router();
-                  router.get('/',(req,res)=>{
+                 
+                  .get('/',(req,res)=>{
                                      res.json({"Title":"hello world"})
                   })
-                  module.exports = router;
+                  
+                  .post('/',aca_llamamos_controller)//? a esta ruta siempre le va a preseder /api/nombredelarchivo/
+                  
   app.listen //? levanta el servidor escuchando en el puerto que le pases por argumento
                 |argumentos que recive|puerto ejm 3000
      
